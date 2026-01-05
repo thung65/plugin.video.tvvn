@@ -202,7 +202,7 @@ def play_link(chn, src):
 
     #m3u8 url from vtvgo
     elif data['channels'][chn]['src']['playpath'] == "m3u8_vtvgo":
-        url = 'https://vtvgo.vn/channel'+data['channels'][chn]['src']['page_url']
+        url = 'http://vtvgo.vn/channel'+data['channels'][chn]['src']['page_url']
         stringA = opener.open(url).read().decode('utf-8')
         stringB = "var link = '"
         stringC = "'" 
